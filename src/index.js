@@ -1,17 +1,71 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"; 
+import ReactDOM from "react-dom";
+import "./style.css" 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// JSX (99.99% HTML + 20% Js)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Hello=()=>{
+
+    let a = 10
+
+    let h1Style = {textAlign: "center", border: "2px solid green"}
+
+    return (
+       <div className="hello">
+            {/* <h1 style={{textAlign: "center", border: "2px solid green"}}> Hello World , {a} </h1> */}
+            <h1 style={h1Style}> Hello World , {a} </h1>
+            <p> {2+3+4+5} </p>
+            <p>Hey how are you!</p>
+       </div>
+     )
+    
+
+}
+
+{/* <Hello/> */}
+
+ReactDOM.render(<Hello/>,  document.getElementById("root"))
+
+
+//  
+/* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // function
+// function hello(){
+//     return "hello world"
+// }
+
+// hello()
+
+
+// // component -functional component
+// function Hello(){
+//     return <h1>Hello World</h1>
+// }
+
+// <Hello> </Hello>
+
+// <Hello />
+
